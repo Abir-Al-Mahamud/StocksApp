@@ -1,0 +1,14 @@
+# <h1>Stocks#index</h1>
+# <p>Find me in app/views/stocks/index.html.erb</p>
+
+<h1>Stocks</h1>
+<div class="stocks">
+  <% @stocks.each do |stock| %>
+    <div class="stock-card">
+      <h2><%= stock.name %></h2>
+      <p>Symbol: <%= stock.symbol %></p>
+      <p>Price: $<%= stock.price %></p>
+    </div>
+  <% end %>
+</div>
+    
