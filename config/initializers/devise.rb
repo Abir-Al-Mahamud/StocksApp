@@ -1,5 +1,8 @@
 # frozen_string_literal: true
-
+# class User < ApplicationRecord
+#      devise :database_authenticatable, :registerable,
+#             :recoverable, :rememberable, :validatable
+#  end
 # Assuming you have not yet modified this file, each configuration option below
 # is set to its default value. Note that some are commented out while others
 # are not: uncommented lines are intended to protect your configuration from
@@ -15,7 +18,11 @@ Devise.setup do |config|
   # Devise will use the `secret_key_base` as its `secret_key`
   # by default. You can change it below and use your own secret key.
   # config.secret_key = '978b8c9ba39277dca2c40ecae14a9fdf23c70a56ed0cfc0aa611b5638b92b78be1c465e895292eac93a2d7f58345a6b8a2f1d3e31a0690e6a1c25c57c7788f72'
-
+  # class User < ApplicationRecord
+  #   devise :database_authenticatable, :registerable,
+  #          :recoverable, :rememberable, :validatable
+  # end
+  
   # ==> Controller configuration
   # Configure the parent class to the devise controllers.
   # config.parent_controller = 'DeviseController'
