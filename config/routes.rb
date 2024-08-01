@@ -3,7 +3,8 @@ Rails.application.routes.draw do
   devise_for :users
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
   # devise_for :users
-  root to: 'stocks#index'
+  # root to: 'stocks#index'
+  root to: 'devise/sessions#new'
   resources :stocks, only: [:index]
   resources :users, only: [:index, :show]
   # Reveal health status on /up that returns 200 if the app boots with no exceptions, otherwise 500.
