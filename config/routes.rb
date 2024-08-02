@@ -1,12 +1,13 @@
 Rails.application.routes.draw do
   get 'home/index'
   get 'stocks/index'
+  root to: 'home#index'
+  
   devise_for :users
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
   # devise_for :users
   # root to: 'stocks#index'
   # root to: 'devise/sessions#new'
-  root to: 'home#index'
   resources :stocks 
   # resources :stocks, only: [:index]
   resources :users, only: [:index, :show]
